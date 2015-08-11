@@ -1,0 +1,31 @@
+name: Birthdays
+version: 1.0.0
+main: Birthdays\Main
+api: [1.12.0]
+commands:
+  birthday:
+    usage: /bitrhday <set> <MM> <DD> [player]
+    description: Set your birthday
+    permission: birthday.command.set
+  delbirthday:
+    usage: /delbirthday <player>
+    description: Deletes a player's birthday
+    permission: birthday.command.del
+permissions:
+  birthday:
+    default: false
+    description: Allows the player to use all of the Birthdays features
+    children:
+      birthday.command:
+         default: false
+         description: Allows the player to use all of the Birthday commands
+         children:
+           birthday.command.set:
+             default: true
+             description: Allows the player to set their birthday
+           birthday.command.del:
+             default: op
+             description: Allows the player to delete another player's birthday
+           birthday.command.other:
+             default: op
+             description: Allows the player to set another player's birthday
