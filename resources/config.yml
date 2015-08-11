@@ -1,0 +1,17 @@
+# How many times can a player set their birthday?
+AmountofSets: 1
+
+# Can ops change a birthay if the AmountofSets is at it's maximum amount?
+OpsChange: "yes"
+
+# Message to be broadcasted when a player joins on their birthday. Use {PLAYER} for the player name
+Message: "Everyone wish {PLAYER} a happy birthday!"
+
+# Popup to send a player on their birthday
+# if set to "nothing", no popup will be sent
+Popup: "§2Happy birthday!"
+
+# List of items to be given to the player when they join on their birthday
+Items:
+  - "57:0:5"
+  - "264:0:32"
